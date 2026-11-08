@@ -23,8 +23,8 @@
 }
 
 :is(a, button, input):focus-visible {
-    outline: 3px solid white;
-    outline-offset: 4px;
+  outline: 3px solid white;
+  outline-offset: 4px;
 }
 
 body {
@@ -68,7 +68,7 @@ p {
 }
 
 /*Navigation*/
-.nav-header{
+.nav-header {
   position: absolute;
   top: 30%;
   right: 5%;
@@ -76,14 +76,14 @@ p {
   gap: 4vh;
 }
 
-.nav-header a{
+.nav-header a {
   color: white;
   font-size: clamp(1.75rem, 1vw + 0.75rem, 3rem);
   text-transform: uppercase;
   font-weight: bold;
 }
 
-.nav-header a:hover{
+.nav-header a:hover {
   color: rgb(3, 119, 158);
   transition: .5s ease;
 }
@@ -109,7 +109,7 @@ header {
   gap: 10vh;
 }
 
-#index-main h3{
+#index-main h3 {
   color: var(--orange700);
   -webkit-text-stroke: 1px black;
   text-shadow: 0px 0px 10px white;
@@ -119,6 +119,7 @@ header {
   padding: 3vh 10vh;
   background-color: var(--orange500);
   text-decoration: none;
+  text-align: center;
   text-transform: uppercase;
   color: var(--Neutral-700);
   font-weight: bold;
@@ -323,14 +324,14 @@ header {
   z-index: 5;
   background-image: url(../assets/pattern-ticket.svg);
   background-size: contain;
-  background-position:center;
+  background-position: center;
   background-repeat: no-repeat;
   /*glassmorphism*/
   backdrop-filter: blur(50px);
   -webkit-backdrop-filter: blur(50px);
-  
+
   border-radius: 24px;
-  box-shadow: 0 8px 32px rgba(255,255,255, 0.35);
+  box-shadow: 0 8px 32px rgba(255, 255, 255, 0.35);
   container-type: inline-size;
 
   padding: 5vh 3vh;
@@ -468,6 +469,24 @@ header {
       no-repeat,
       no-repeat,
       no-repeat;
+  }
+
+  header{
+    flex-direction: column;
+    align-items: center;
+    gap: 3vh;
+    margin-bottom: 5vh;
+  }
+  .nav-header {
+    position: static;
+    top: 30%;
+    right: 5%;
+    display: flex;
+    gap: 4vh;
+  }
+
+  .nav-header a {
+    font-size: 20px;
   }
 
   #login-main-body {

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="author" content="Jajuan Brown">
+  <meta name="keywords" content="web, web programming, assignment, coding conf">
+  <meta name="description" content="UTECH Individual Assignment #2">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <meta name="event-date" content="2026-10-26">
+  <meta name="event-location" content="Papine, Kgn">
+
+  <title> Coding Conf | Login</title>
+
+  <!--CSS-->
+  <link rel="stylesheet" href="../CSS/style.css">
+</head>
+
+<body>
+  <header>
+    <img src="../assets/logo-full.svg" alt="coding conf logo">
+    <nav class="nav-header">
+      <a href="index.html">Home</a>
+    </nav>
+  </header>
+
+  <main id="login-main">
+    <section id="login-main-top">
+      <h1>Your Journey to Coding Conf <br> 2026
+        Starts Here!</h1>
+      <h4>Secure your spot at next year's biggest coding conference.</h4>
+    </section>
+
+    <section id="login-main-body">
+      <!--Form Stuff-->
+      <form id="registration-form" novalidate>
+        <section id="upload-avatar">
+          <p>Upload Avatar</p>
+
+          <label for="input-file" id="drop-area">
+            <input type="file" accept="image/jpeg, image/png" id="input-file" hidden required>
+            <div id="img-view">
+              <img src="../assets/icon-upload.svg">
+              <p id="drag-drop-text">Drag and Drop or click to upload</p>
+              <small id="pfp-error" class="error"></small>
+            </div>
+          </label>
+        </section>
+
+        <!--Name-->
+        <section id="full-name-section">
+          <p>Full Name</p>
+
+          <label for="name" id="name-section">
+            <input type="text" id="name" name="full-name" autocomplete="name" required>
+            <small id="name-error" class="error"></small>
+          </label>
+        </section>
+
+        <!--Email-->
+        <section id="email-section">
+          <p>Email</p>
+          <label for="email" id="email-label">
+            <input type="email" id="email" name="email" placeholder="example@email.com" autocomplete="email" required>
+            <small id="email-error" class="error"></small>
+          </label>
+        </section>
+
+        <!--Github-->
+        <section id="github-name-section">
+          <p>Github</p>
+
+          <label for="github" id="github-name">
+            <input type="text" id="github" name="github-name" placeholder="@yourusername" autocomplete="off" required>
+            <small id="github-error" class="error"></small>
+          </label>
+        </section>
+
+        <section id="generate-ticket-section">
+          <button type="submit" id="generate-ticket">Generate My Ticket</button>
+        </section>
+
+        <!--End of login main body-->
+        </form>
+    </section>
+    
+
+
+  </main>
+
+  <script src="../JS/validation.js"></script>
+</body>
+
+</html>
